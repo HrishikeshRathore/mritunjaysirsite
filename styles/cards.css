@@ -1,0 +1,72 @@
+#cards{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    width: 17%;
+    height: 430px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+}
+
+.card .shad{
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 35%;
+    width: 100%;
+    border-radius: 30px;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.card .shad i{
+    font-size: 3rem;
+    color: rgba(22, 7, 7, .8);
+    padding-bottom: 30px;
+}
+
+.card .cont{
+    padding: 20px;
+    text-align: center;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.card .cont h2{
+    font-weight: bold;
+    color: rgb(22, 7, 7);
+}
+
+.card .cont p{
+    padding: 20px 10px;
+    text-align: justify;
+    color: rgb(22, 7, 7);
+}
+
+.card .cont button{
+    background-color: transparent;
+    border: 0;
+    color: rgb(22, 7, 7);
+    font-weight: 20px;
+}
+
+@media screen and (max-width: 768px){
+    #cards{
+        flex-direction: column;
+    }
+
+    .card{
+        width: 94%;
+        height: 350px;
+    }
+}

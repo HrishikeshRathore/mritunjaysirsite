@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://css.gg/arrange-front.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/cards.css">
+    <link rel="stylesheet" href="styles/head2.css">
+</head>
+
+<body>
+
+    <div class="top"></div>
+
+    <section id="navigation">
+        <div class="logo">
+            <div>
+                <i class="gg-arrange-front"></i>
+                <h1>MyAssignment<span>Writter</span></h1>
+            </div>
+            <div><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a></div>
+        </div>
+
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+        </div>
+    </section>
+
+    <section id="head">
+        <div class="leftHead">
+            <h1>My Assignment Writter</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis deserunt rerum sit fugiat esse a
+                provident dignissimos explicabo aspernatur ratione.</p>
+            <div>
+                <i class="fa fa-comments-o"></i>
+                <h4>Review</h4>
+                <i class="fa fa-envelope-open-o"></i>
+                <h4>About</h4>
+                <i class="fa fa-diamond"></i>
+                <h4>Contact</h4>
+            </div>
+        </div>
+
+        <div class="rightHead">
+            <img src="images/head.jpg" alt="headimage">
+        </div>
+    </section>
+
+
+    <section id="cards">
+        <div class="card" style="background-color: rgb(169, 236, 179);">
+            <div class="shad">
+                <i class="fa fa-comments-o"></i>
+            </div>
+            <div class="cont">
+                <h2>Home Page</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, quam dicta dolorem sit nam ipsa.</p>
+                <button>View more ~></button>
+            </div>
+        </div>
+
+        <div class="card" style="background-color: rgb(236, 232, 169);">
+            <div class="shad">
+                <i class="fa fa-comments-o"></i>
+            </div>
+            <div class="cont">
+                <h2>Home Page</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, quam dicta dolorem sit nam ipsa.</p>
+                <button>View more ~></button>
+            </div>
+        </div>
+
+        <div class="card" style="background-color: rgb(236, 169, 169);">
+            <div class="shad">
+                <i class="fa fa-comments-o"></i>
+            </div>
+            <div class="cont">
+                <h2>Home Page</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, quam dicta dolorem sit nam ipsa.</p>
+                <button>View more ~></button>
+            </div>
+        </div>
+
+        <div class="card" style="background-color: rgb(169, 186, 236);">
+            <div class="shad">
+                <i class="fa fa-comments-o"></i>
+            </div>
+            <div class="cont">
+                <h2>Home Page</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, quam dicta dolorem sit nam ipsa.</p>
+                <button>View more ~></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="head2">
+        <div class="leftHead2">
+            <img src="images/head2.png" alt="">
+        </div>
+        <div class="rightHead2">
+            <h1>About Us</h1>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore soluta neque dolorem commodi magni
+                repellendus voluptates nostrum aperiam veniam, laboriosam repudiandae porro qui perferendis consectetur,
+                iure sit quia dolor modi.
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis officia suscipit, pariatur ex,
+                laboriosam fuga placeat non nesciunt adipisci odio perferendis facere ratione! Nisi dignissimos at sed
+                saepe incidunt aliquid!
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos fuga deleniti praesentium, in ex earum,
+                illo consectetur nihil quia assumenda eligendi non alias corrupti incidunt quod iusto suscipit eaque
+                consequuntur?
+                <br>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia molestiae, nam reiciendis maxime expedita
+                nemo rerum. Quis eum ratione, facere non praesentium necessitatibus voluptatibus numquam inventore
+                suscipit reprehenderit commodi ea?
+            </p>
+        </div>
+    </section>
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
