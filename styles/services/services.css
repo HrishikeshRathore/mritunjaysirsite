@@ -1,0 +1,15 @@
+#heading{
+    height: 500px;
+    background-image: url("../../svg/servicebg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#heading h1{
+    font-size: 5rem;
+    font-weight: bolder;
+    color: #fff;
+}

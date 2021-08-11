@@ -1,12 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href='https://css.gg/arrange-front.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/about/about.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/footer.css">
 </head>
+
 <body>
-    
+
+
+    <div class="top"></div>
+
+
+
+    <section id="navigation">
+        <div class="logo">
+            <div>
+                <i class="gg-arrange-front"></i>
+                <h1>MyAssignment<span>Writter</span></h1>
+            </div>
+            <div><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a></div>
+        </div>
+
+        <div class="topnav" id="myTopnav">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="about.html" class="active">About</a>
+        </div>
+    </section>
+
+    <section id="head">
+        <div class="left">
+            <img src="images/about.png" alt="about">
+        </div>
+        <div class="right">
+            <h1>About<span>Us</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio maxime magni nihil blanditiis ab
+                inventore dolore eligendi facere exercitationem a iure saepe autem, earum et tempore, dignissimos
+                ratione hic aperiam?</p>
+        </div>
+    </section>
+
+
+    <section id="content">
+        <p>Are you looking for a top essay writing service for your educational needs and to boost your grades? Our
+            company can
+            help with your top priority tasks, as we assist many students of all levels from all over the world. Our
+            team consists
+            of the best writers, editors, and academic researchers on the market. They pass several tests and training
+            before
+            joining our company. MyAssignmentWriters combines unique features that make it entirely client-oriented.</p>
+        <p>We strive for perfection in every single aspect of its work processes, our customers can count on getting
+            clear answers
+            from the best support team and receiving flawlessly executed writing tasks at affordable prices. In
+            comparison with
+            other essay writing services, MyAssignmentwriters cares about its clients and provides top services that
+            will fit any
+            budget.</p>
+        <p>The range of services is diverse. You can rest assured that your paper will be done by a qualified college
+            essay writer
+            who won’t mess up grammar or writing style. Among extra features, there is the best essay help from an
+            editor,
+            categories of different writers to pick from, abstract or summary page, etc.</p>
+        <p>These assignments also help students to develop some skills like analytical thinking and language
+            proficiency. In
+            addition, there are pleasant discounts and a well-developed loyalty program that could make your experience
+            truly
+            satisfying. We offer 100% original Plagiarism Free Assignments within the submission deadline to help
+            students secure
+            better grades. Your account details are available and visible only to you and our trusted staff. We do not
+            pass your
+            personal information on to third parties and your payments are made via an encrypted system and kept
+            completely safe.
+            Whether it’s Essay writing help or Any other assignments – we will help you get an A+ in almost all the
+            subjects.</p>
+    </section>
+
+
+    <section id="footer">
+        <div class="intro">
+            <h2>Global Assignment Help</h2>
+            <p>GlobalAssignmentHelp custom writing service provides online custom written papers, such as term papers,
+                research papers,
+                thesis papers, essays, dissertations and other custom writing services inclusive of research material,
+                for assistance
+                purposes only. These custom papers should be used with proper reference.</p>
+        </div>
+        <div class="company">
+            <h3>Company</h3>
+            <ul>
+                <li>About Us</li>
+                <li>Our Writers</li>
+                <li>Prices</li>
+                <li>Progressive Delivery</li>
+                <li>FAQ</li>
+                <li>Testimonials</li>
+            </ul>
+        </div>
+        <div class="terms">
+            <h3>Terms</h3>
+            <ul>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy </a></li>
+                <li>Cookie Policy</li>
+                <li>Guarantees</li>
+                <li>Revision Policy</li>
+                <li>Money Back Guarantee</li>
+                <li>Plagiarism-Free Guarantee</li>
+                <li>Notice on social responsibility Policy</li>
+            </ul>
+        </div>
+        <div class="services">
+            <h3>Services</h3>
+            <ul>
+                <li><a href="#">Assignment Writing</a></li>
+                <li><a href="#">Coursework Writing</a></li>
+                <li><a href="#">Dissertation Writing</a></li>
+                <li><a href="#">Speech Writing</a></li>
+                <li><a href="#">Essay Writing</a></li>
+                <li><a href="#">Term Paper Writing</a></li>
+                <li><a href="#">Research Paper Writing</a></li>
+                <li><a href="#">Thesis Writing</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="copyright">
+        <p>© 2021-2022 GlobalAssignmentHelp</p>
+    </section>
+
+
+
+
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
 </body>
+
 </html>
