@@ -54,7 +54,7 @@
 .rightHead img{
     width: 90%;
     border-radius: 50px;
-    border: 10px solid rgb(245, 107, 57);
+    border: 10px solid #f56b39;
 }
 
 @media screen and (max-width: 768px){

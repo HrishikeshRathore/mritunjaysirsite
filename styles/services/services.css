@@ -1,15 +1,160 @@
 #heading{
-    height: 500px;
-    background-image: url("../../svg/servicebg.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    height: 500px;
 }
 
-#heading h1{
-    font-size: 5rem;
+#heading .headname{
+    width: 50%;
+    height: 100%;
+    background-image: url("../../svg/servicehead.svg");
+    background-size: 120%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#heading .headcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    font-size: 1.28vw;
+    text-align: justify;
+    padding-top: 50px;
+}
+
+#heading .headname h1{
+    padding-top: 50px;
+    font-size: 5.5vw;
+}
+
+#heading .headcon{
+    width: 50%;
+    height: 100%;
+}
+
+#content{
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+}
+
+#content .row{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 30px;
+}
+
+#content .row .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8{
+    width: 300px;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+#content .row a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+#content .row a:hover{
+    color: rgb(201, 54, 1);
+}
+
+.card1{
+    background-image: url("../../svg/servicecards/card1.svg");
+}
+
+.card2{
+    background-image: url("../../svg/servicecards/card2.svg");
+}
+
+.card3{
+    background-image: url("../../svg/servicecards/card3.svg");
+}
+
+.card4{
+    background-image: url("../../svg/servicecards/card4.svg");
+}
+.card5{
+    background-image: url("../../svg/servicecards/card5.svg");
+}
+
+.card6{
+    background-image: url("../../svg/servicecards/card6.svg");
+}
+.card7{
+    background-image: url("../../svg/servicecards/card7.svg");
+}
+
+.card8{
+    background-image: url("../../svg/servicecards/card8.svg");
+}
+
+.service{
+    text-align: center;
+    padding-top: 20px;
     font-weight: bolder;
-    color: #fff;
+    padding-bottom: 20px;
+    margin-top: 50px;
+    font-size: 2.5rem;
+}
+
+
+
+@media screen and (max-width: 1000px){
+    #content{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #content .row{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #content{
+        flex-direction: column;
+        align-items: center;
+        font-size: .9rem;
+    }
+
+    #content .row .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8{
+        width: 280px;
+        height: 280px;
+    }
+
+    #heading {
+        flex-direction: column;
+        height: 600px;
+    }
+
+    #heading .headname{
+        width: 100%;
+    }
+
+    #heading .headcon{
+        width: 80%;
+        padding: 10%;
+        font-size: .8rem;
+    }
+
+    #heading .headname h1{
+        font-size: 1.8rem;
+    }
+
+    .service{
+        background-color: rgb(250, 224, 214);
+        font-size: 1.5rem;
+    }
 }
