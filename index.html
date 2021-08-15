@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/ourserve.css">
     <link rel="stylesheet" href="styles/price.css">
+    <link rel="stylesheet" href="styles/questions.css">
+
 
 </head>
 
@@ -210,8 +212,70 @@
 
 
 
-    <section id="questions">
 
+
+
+    <section id="faq-section">
+        <h1 class="heading">Frequently Asked Questions</h1>
+        <div class="faq-container">
+            <div class="faqs">
+                <div class="faq">
+                    <h2 class="faq_question to-bottom">
+                        What exactly does GlobalAssignmentHelp do?
+                    </h2>
+                    <div class="faq_answer">
+                        Anything you can think of, we can do it. We provide help with the
+                        following assignments: college and high school essays, research
+                        and term papers, thesis proposals and capstone projects, book and
+                        movie reviews, article critiques and academic tutorials, speech
+                        and presentation assistance, CVs, cover letters, resumes and other
+                        career application assistance, lab reports, scientific studies,
+                        etc.
+                    </div>
+                </div>
+                <div class="faq">
+                    <h2 class="faq_question to-bottom">
+                        How do you protect my payment information?
+                    </h2>
+                    <div class="faq_answer">
+                        We have an SSL secure payment processing procedure, through a
+                        third party, with continually updated firewalls. All credit card,
+                        bank, and/or PayPal account information is fully encrypted. We
+                        have never experienced a security breach.
+                    </div>
+                </div>
+                <div class="faq">
+                    <h2 class="faq_question to-bottom">
+                        What if I don’t like my paper?
+                    </h2>
+                    <div class="faq_answer">
+                        You can contact us immediately and provide us with the details
+                        relative to your dissatisfaction. We will be happy to revise and
+                        re-write until you are happy. As long as your request does not
+                        conflict with your original instructions to our writer.
+                    </div>
+                </div>
+            </div>
+            <div class="faqs">
+                <div class="faq">
+                    <h2 class="faq_question to-bottom">Can I talk to my writer?</h2>
+                    <div class="faq_answer">
+                        Yes, you can contact your writer through our website and send him
+                        a direct message.
+                    </div>
+                </div>
+                <div class="faq">
+                    <h2 class="faq_question to-bottom">
+                        How do you assign writers to order?
+                    </h2>
+                    <div class="faq_answer">
+                        We locate a writer who has the most appropriate educational level
+                        in the subject field of your order and who has had experience with
+                        the specific writing genre you need.
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
 
@@ -291,7 +355,25 @@
         }
     </script>
 
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
     <script src="form.js"></script>
+    <script src="faq.js"></script>
 
 </body>
 
