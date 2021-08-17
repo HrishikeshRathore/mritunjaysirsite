@@ -1,0 +1,60 @@
+#heading{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 400px;
+    padding-top: 80px;
+    background-image: url("../../svg/serviceitembg.svg");
+    background-size: cover;
+}
+
+#heading h1{
+    font-size: 4rem;
+    font-weight: bolder;
+    padding-left: 10%;
+    color: #fff;
+}
+
+#content{
+    padding: 50px 10%;
+}
+
+#content span{
+    font-weight: bolder;
+    font-size: 1.9rem;
+    padding: 0px 2px;
+}
+
+#content p{
+    font-size: 1.4rem;
+    padding: 15px 0px;
+    text-align: justify;
+}
+
+#content ul{
+    padding-left: 80px;
+}
+
+#content ul li p{
+    padding: 0;
+}
+
+@media screen and (max-width: 768px){
+    #heading{
+        justify-content: center;
+        height: 250px;
+    }
+    #content p{
+        font-size: 1rem;
+    }
+
+    #heading h1{
+        font-size: 2rem;
+        text-align: center;
+        padding: 0;
+    }
+
+    #content ul{
+        padding-left: 6%;
+    }
+}
